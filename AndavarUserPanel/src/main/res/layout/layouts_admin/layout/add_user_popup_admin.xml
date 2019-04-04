@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:animateLayoutChanges="true"
+    android:id="@+id/container"
+    android:background="@drawable/border1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add User"
+                android:gravity="center"
+                android:id="@+id/txtclose"
+                android:textStyle="bold"
+                
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:drawableRight="@drawable/exit_admin"
+                android:drawablePadding="8dp"
+                android:background="@android:color/transparent"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter all the user details"
+            android:textColor="#123456"
+            android:padding="5dp"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2_admin"
+                android:gravity="center"
+                android:hint="Username"
+                android:inputType="textCapWords|textCapSentences"
+                android:padding="7dp"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/etPwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border2_admin"
+                android:gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="7dp"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/etConfirmPwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border2_admin"
+                android:gravity="center"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="7dp"
+                android:textSize="14dp" />
+            <EditText
+                android:id="@+id/etPhNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2_admin"
+                android:gravity="center"
+                android:hint="Phone number"
+                android:inputType="phone"
+                android:padding="7dp"
+                android:layout_marginTop="8dp"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2_admin"
+                android:gravity="center"
+                android:hint="Email Id"
+                android:inputType="textEmailAddress"
+                android:padding="7dp"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/etAddr"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2_admin"
+                android:gravity="center"
+                android:hint="Address"
+                android:inputType="textCapWords|textCapSentences"
+                android:padding="7dp"
+                android:textSize="14dp" />
+            <EditText
+                android:id="@+id/etPanNo"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2_admin"
+                android:gravity="center"
+                android:hint="Pan/Aadhaar number"
+                android:inputType="textCapWords|textCapSentences"
+                android:padding="7dp"
+                android:textSize="14dp" />
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/etAdmin"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2_admin"
+                android:gravity="center"
+                android:minLines="2"
+                android:hint="S Admin:1/Admin:2/Employee:3/M Person:4"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="7dp"
+                android:textSize="14dp" />
+            <Spinner
+                android:padding="7dp"
+                android:background="@drawable/border2_admin"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idSpinner"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border3_admin"
+                android:text="ADD USER"
+                android:textSize="16sp"
+                android:id="@+id/btnAddUser"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

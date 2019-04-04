@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/assign_reached_location"
+        android:title="Reached Location" />
+    <item
+        android:id="@+id/assign_convert_to_checkIn"
+        android:title="Convert to Task" />
+
+
+</menu>

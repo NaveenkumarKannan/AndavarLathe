@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_attendances"
+        android:icon="@drawable/ic_attendances_admin"
+        android:title="Past Attendance" />
+    <item
+        android:id="@+id/navigation_recorded_calls"
+        android:icon="@drawable/ic_call_admin"
+        android:title="Recorded Calls" />
+</menu>

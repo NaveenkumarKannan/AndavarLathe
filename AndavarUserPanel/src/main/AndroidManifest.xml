@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androfocus.location.tracking.andavaruser">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:noHistory="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.androfocus.location.tracking.andavaruser"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_xml" />
+        </provider>
+
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name=".CheckINActivity" />
+        <activity android:name=".ExpensesActivity" />
+        <activity android:name=".AttendanceActivity" />
+        <activity android:name=".LocationTrackActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".CollectionActivity" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".Internet_Connection" />
+
+        <service android:name=".ServiceAlarm">
+            <intent-filter>
+                <action android:name="com.androfocus.location.tracking.idol.ServiceAlarm" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MJobScheduler"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".callrecord.CallJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".callrecord.service.CallRecordService"
+            android:exported="true" />
+
+        <activity android:name=".PastAttendanceActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".admin.CheckINActivityAdmin"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden|adjustResize" />
+        <activity android:name=".admin.firstAdmin" />
+        <activity android:name=".admin.MainAdminActivity" />
+        <activity android:name=".admin.esslAdmin" />
+        <activity android:name=".admin.Service_eng" />
+        <activity android:name=".admin.CCtvLiveActivityAdmin" />
+        <activity android:name=".admin.ClientDetailsActivityAdmin" />
+        <activity android:name=".admin.EmployeeModuleActivityAdmin" />
+        <activity android:name=".admin.AttendencesActivityAdmin" />
+        <activity android:name=".admin.PastAttendanceActivityAdmin" />
+        <activity
+            android:name=".admin.RecordedCallsActivity"
+            android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" />
+        <activity android:name=".StartActivity" />
+
+        <receiver
+            android:name=".SampleDeviceAdminReceiver"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".admin.TrackedLocationsActivity"
+            android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" />
+        <activity android:name=".admin.UserDetailsActivity" />
+        <activity android:name=".admin.ProfileAdminActivity" />
+
+        <!-- Firebase -->
+        <activity android:name=".Firebase.MainActivity"></activity>
+
+        <service android:name=".Firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Firebase.ActivitySendPushNotification">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Firebase.DisplayTokenActivity" />
+        <activity
+            android:name=".admin.MapsTrackingActivity"
+            android:label="@string/title_activity_maps_tracking"></activity>
+    </application>
+
+</manifest>

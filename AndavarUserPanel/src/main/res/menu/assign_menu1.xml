@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/assign_convert_to_collection"
+        android:title="Convert to collection" />
+    <item
+        android:id="@+id/assign_mark_as_done"
+        android:title="Mark as Done" />
+
+</menu>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:animateLayoutChanges="true"
+    android:id="@+id/container"
+    android:background="@drawable/border1_admin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Client"
+                android:gravity="center"
+                android:id="@+id/txtclose"
+                android:textStyle="bold"
+                
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:drawableRight="@drawable/exit_admin"
+                android:drawablePadding="8dp"
+                android:background="@android:color/transparent"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter all the client details"
+            android:textColor="#123456"
+            android:padding="5dp"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <EditText
+                android:id="@+id/etClientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2_admin"
+                android:gravity="center"
+                android:hint="Client Name"
+                android:inputType="textCapWords|textCapSentences"
+                android:padding="7dp"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/etClientCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border2_admin"
+                android:gravity="center"
+                android:hint="Client Company"
+                android:padding="7dp"
+                android:textSize="14dp" />
+            <EditText
+                android:id="@+id/etAddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border2_admin"
+                android:gravity="center"
+                android:hint="Address"
+                android:padding="7dp"
+                android:textSize="14dp" />
+            <EditText
+                android:id="@+id/etPhNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border2_admin"
+                android:gravity="center"
+                android:inputType="phone"
+                android:hint="Phone number"
+                android:padding="7dp"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border2_admin"
+                android:gravity="center"
+                android:hint="Email"
+                android:padding="7dp"
+                android:textSize="14dp" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border3_admin"
+                android:text="Add Client"
+                android:textSize="16sp"
+                android:id="@+id/btnAssignWork"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

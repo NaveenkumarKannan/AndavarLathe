@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    defaultConfig {
+        applicationId "com.androfocus.location.tracking.andavaruser"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layout/layouts_admin',
+                            'src/main/res/layout',
+                            'src/main/res'
+                    ]
+        }
+    }
+    buildToolsVersion '27.0.3'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':slidesidemenu-library')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.miguelcatalan:materialsearchview:1.0.0'
+    //implementation 'com.android.support:support-vector-drawable:27.1.1'
+    //implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    //implementation 'com.github.aykuttasil:CallRecorder:1.2.9'
+    //api project(':callrecord')
+    implementation 'com.github.jeancsanchez:JcPlayer:2.6.13'
+    implementation 'cn.jzvd:jiaozivideoplayer:6.3.1'
+
+    implementation 'com.facebook.android:facebook-android-sdk:4.5.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation('com.facebook.fresco:fresco:1.9.0') {
+        exclude group: 'com.parse.bolts', module: 'bolts-applinks'
+        exclude module: 'bolts-android'
+        exclude group: 'com.parse.bolts', module: 'bolts-tasks'
+    }
+
+    implementation 'com.google.firebase:firebase-core:16.0.3'
+    implementation 'com.google.firebase:firebase-messaging:17.3.2'
+    implementation 'com.android.volley:volley:1.0.0'
+    implementation "me.leolin:ShortcutBadger:1.1.22@aar"
+}
+apply plugin: 'com.google.gms.google-services'

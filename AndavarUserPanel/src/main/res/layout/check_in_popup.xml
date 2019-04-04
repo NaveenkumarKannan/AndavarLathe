@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/border1"
+
+    >
+    <android.support.v7.widget.Toolbar
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Today Task"
+                android:gravity="center"
+                
+                android:id="@+id/txtclose"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:drawableRight="@drawable/exit"
+                android:drawablePadding="8dp"
+                android:background="@android:color/transparent"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please enter all the check-in related data in the forum,the location will be auto populated via GPS. for the photo use your camera to take a snap"
+                android:textColor="#123456"
+                android:padding="5dp"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llPopup"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Title"
+                        android:textSize="14dp"
+                        android:textStyle="bold|italic"
+                        android:layout_marginRight="5dp"
+                        android:padding="7dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/tvTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textStyle="bold|italic"
+                        android:padding="7dp"
+                        android:gravity="center"
+                        android:background="@drawable/border2"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Company Name"
+                        android:textSize="14dp"
+                        android:textStyle="bold|italic"
+                        android:layout_marginRight="5dp"
+                        android:padding="7dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/tvCompanyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textStyle="bold|italic"
+                        android:padding="7dp"
+                        android:gravity="center"
+                        android:background="@drawable/border2"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Company Address"
+                        android:textSize="14dp"
+                        android:textStyle="bold|italic"
+                        android:layout_marginRight="5dp"
+                        android:padding="7dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/tvCompanyAddr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textStyle="bold|italic"
+                        android:padding="7dp"
+                        android:gravity="center"
+                        android:background="@drawable/border2"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20dp">
+
+                <EditText
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border2"
+                    android:gravity="center"
+                    android:hint="Name"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:padding="7dp"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/tvDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/border2"
+                    android:gravity="center"
+                    android:hint="Details"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:padding="7dp"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/border2"
+                    android:gravity="center"
+                    android:hint="Location"
+                    android:inputType="textCapCharacters"
+                    android:padding="7dp"
+                    android:textSize="14dp" />
+                <TextView
+                    android:id="@+id/tvPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Take Photo"
+                    android:textSize="14dp"
+                    android:layout_marginTop="8dp"
+                    android:padding="7dp"
+                    android:gravity="center"
+                    android:background="@drawable/border2"
+                    />
+                <TextView
+                    android:id="@+id/tvVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Take Video"
+                    android:textSize="14dp"
+                    android:layout_marginTop="8dp"
+                    android:padding="7dp"
+                    android:gravity="center"
+                    android:background="@drawable/border2"
+                    />
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:visibility="gone"/>
+                <!--
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_view"/>
+                -->
+                <Button
+                    android:id="@+id/btnCheckIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/border3"
+                    android:text="ADD CHECK-IN"
+                    android:textSize="16sp"
+
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

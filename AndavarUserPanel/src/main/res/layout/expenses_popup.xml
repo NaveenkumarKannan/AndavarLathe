@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/border1"
+
+
+    >
+    <android.support.v7.widget.Toolbar
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/main">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Expense"
+                android:gravity="center"
+                android:id="@+id/txtclose"
+                android:textStyle="bold"
+                
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/main"
+                android:drawableRight="@drawable/exit"
+                android:drawablePadding="8dp"
+                android:background="@android:color/transparent"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter your daily expenses here. Name your expenses like  a petrol or something similar,also you write down the detauls of your expenses if you wish."
+            android:textColor="#123456"
+            android:padding="5dp"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <EditText
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:hint="Name"
+                android:inputType="textCapSentences"
+                android:padding="7dp"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:hint="Date"
+                android:inputType="date"
+                android:padding="7dp"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/tvDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:hint="Details"
+                android:inputType="textCapWords"
+                android:padding="7dp"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/tvAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:hint="Amount"
+                android:inputType="phone"
+                android:padding="7dp"
+                android:textSize="14dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:id="@+id/btnExepneses"
+                
+                android:background="@drawable/border3"
+                android:text="ADD EXPENSE"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

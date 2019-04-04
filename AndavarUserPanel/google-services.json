@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "699162490682",
+    "firebase_url": "https://andavarlatheinfo.firebaseio.com",
+    "project_id": "andavarlatheinfo",
+    "storage_bucket": "andavarlatheinfo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699162490682:android:d2e1e48f4820ce85",
+        "android_client_info": {
+          "package_name": "com.androfocus.location.tracking.andavaruser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699162490682-5irlup9v9b681rc95p5lsrr18jnscc0s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.androfocus.location.tracking.andavaruser",
+            "certificate_hash": "d79ec328fdeb041ed435a46e27212405ce3541e3"
+          }
+        },
+        {
+          "client_id": "699162490682-lh13vmrl52ajafl18rof4mjnc2p1jroi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsuQ2ElT81XSjV9ghqNiZft0v9SR7SWI4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "699162490682-lh13vmrl52ajafl18rof4mjnc2p1jroi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

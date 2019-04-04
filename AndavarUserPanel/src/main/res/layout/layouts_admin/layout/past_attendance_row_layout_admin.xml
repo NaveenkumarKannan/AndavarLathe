@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border6_admin"
+    android:padding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:id="@+id/tvUserName"
+            android:padding="5dp"
+            android:gravity="start"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:textStyle="bold|italic"
+            android:layout_column="2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6th Aug 2018"
+            android:padding="5dp"
+            android:gravity="start"
+            android:id="@+id/tvDate"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/date_admin"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_column="2"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start at"
+                    android:padding="5dp"
+                    android:gravity="start"
+                    android:textColor="#ffffff"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_column="2"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11:49 AM"
+                    android:padding="5dp"
+                    android:gravity="start"
+                    android:id="@+id/tvStartTime"
+                    android:textColor="#ffffff"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_column="2"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Location"
+                    android:id="@+id/tvLocationStart"
+                    android:padding="5dp"
+                    android:gravity="start"
+                    android:textColor="#ffffff"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_column="2"
+                    />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#fff"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End at"
+                    android:padding="5dp"
+                    android:gravity="start"
+                    android:textColor="#ffffff"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_column="2"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11:49 AM"
+                    android:padding="5dp"
+                    android:gravity="start"
+                    android:id="@+id/tvEndTime"
+                    android:textColor="#ffffff"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_column="2"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End Location"
+                    android:id="@+id/tvLocationEnd"
+                    android:padding="5dp"
+                    android:gravity="start"
+                    android:textColor="#ffffff"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_column="2"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 hours"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/tvDuration"
+            android:drawableLeft="@drawable/timee_admin"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_column="2"
+            />
+
+    </LinearLayout>
+</LinearLayout>

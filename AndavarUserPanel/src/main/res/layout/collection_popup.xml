@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:animateLayoutChanges="true"
+    android:id="@+id/container"
+    android:background="@drawable/border1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Collection"
+                android:gravity="center"
+                android:id="@+id/txtclose"
+                android:textStyle="bold"
+                
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:drawableRight="@drawable/exit"
+                android:drawablePadding="8dp"
+                android:background="@android:color/transparent"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter all the check-in related data in the forum,the location will be auto populated via GPS. for the photo use your camera to take a snap"
+            android:textColor="#123456"
+            android:padding="5dp"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <EditText
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:hint="Name"
+                android:inputType="textCapWords|textCapSentences"
+                android:padding="7dp"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/tvDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:hint="Details"
+                android:inputType="textCapWords|textCapSentences"
+                android:padding="7dp"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:hint="Date"
+                android:inputType="date"
+                android:padding="7dp"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/tvAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:hint="Amount"
+                android:inputType="phone"
+                android:padding="7dp"
+                android:textSize="14dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border3"
+                android:text="ADD COLLECTION"
+                android:textSize="16sp"
+                android:id="@+id/btnCollection"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

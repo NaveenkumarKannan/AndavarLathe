@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AndavarLathe</string>
+    <string name="title_shop">Today Expenses</string>
+    <string name="title_gifts">Today Task</string>
+    <string name="title_cart">Collection</string>
+    <string name="title_profile">Profile</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="email">Email Id</string>
+    <string name="login">LOGIN</string>
+    <string name="passowrd">Password</string>
+    <string name="show_pwd">Show Password</string>
+    <string name="hide_pwd">Hide Password</string>
+    <string name="forgot">Forgot password?</string>
+</resources>

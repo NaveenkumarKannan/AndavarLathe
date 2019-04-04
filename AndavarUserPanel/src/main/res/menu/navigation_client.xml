@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_client_details"
+        android:icon="@drawable/ic_assign_admin"
+        android:title="Client Details" />
+    <item
+        android:id="@+id/navigation_add_client"
+        android:icon="@drawable/ic_add_user_admin"
+        android:title="Add client" />
+
+</menu>

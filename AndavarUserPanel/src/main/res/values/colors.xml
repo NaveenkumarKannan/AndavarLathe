@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3d82e8</color>
+    <!--<color name="colorPrimary">#ed8105</color>-->
+    <color name="colorPrimaryDark">#007180</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bgBottomNavigation">#007180</color>
+
+    <color name="white">#ffffff</color>
+    <color name="bluelight">#b0001e80</color>
+    <color name="orange">#e2d15c09</color>
+    <color name="green">#e227d109</color>
+
+    <color name="white_greyish">#EEEEEE</color>
+    <color name="button_selectorcolor">#9E9E9E</color>
+
+    <color name="colorPrimaryTimeDate">#3F51B5</color>
+    <color name="colorPrimaryDarkTimeDate">#303F9F</color>
+    <color name="colorAccentTimeDate">#FF4081</color>
+</resources>

@@ -1,0 +1,2 @@
+include ':AndavarUserPanel', ':slidesidemenu-library'
+//include ':AndavarUserPanel', ':callrecord'
